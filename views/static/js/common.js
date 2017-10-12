@@ -1,6 +1,6 @@
 define(["jquery", "template", "cookie"], function ($, template) {
     $(function () {
-        //判断是否在登录页面，如果不在登录页面则跳转到登录页面
+        //判断是否在登录页面，如果不在登录页面则跳转到登录页面.
         //获取cookie中的用户信息
         if (location.pathname != "/dashboard/login") {
             //如果$.cookie("PHPSESSID") 存在则表示已经登录过了，如果不存在跳回登录界面
