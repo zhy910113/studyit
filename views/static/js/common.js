@@ -17,12 +17,12 @@ define(["jquery", "template", "cookie"], function ($, template) {
         //退出登录，退出后清除后台用户数据（ajax后台处理），跳转到登录界面
         $('#logout').click(function () {
             $.ajax({
-                url: "api/logout",
+                url: "/api/logout",
                 type: "post",
                 success: function (data) {
                     //请求成功，返回登录界面
                     if (data.code == 200) {
-                        location.href = "dashboard/login"
+                        location.href = "/dashboard/login"
                     }
                 }
             })
